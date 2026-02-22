@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athen Bau</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;700&display=swap');
+
+        body { 
+            background-color: #1A1A1A; 
+            margin: 0; 
+            display: flex;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px; /* Hält das Design kompakt wie auf einem Handy */
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .kontakt-nav {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 40px;
+        }
+
+        .kontakt-btn {
+            border: 1px solid #D4AF37;
+            color: #D4AF37;
+            text-decoration: none;
+            padding: 8px 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h1 { 
+            font-family: 'Playfair Display', serif;
+            color: #D4AF37;
+            font-size: 42px; 
+            margin: 0; 
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .slogan { 
+            color: #D4AF37;
+            font-size: 14px; 
+            margin-top: 10px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .item {
+            border: 1px solid #D4AF37;
+            color: #D4AF37;
+            text-decoration: none;
+            padding: 40px 10px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kontakt-nav"><a href="#" class="kontakt-btn">KONTAKT</a></div>
+        <h1>ATHEN Bau</h1>
+        <div class="slogan">Präzision, Qualität, Zuverlässigkeit</div>
+        <div class="grid">
+            <a href="#" class="item">Badezimmer</a>
+            <a href="#" class="item">Küche</a>
+            <a href="#" class="item">Wände</a>
+            <a href="#" class="item">Böden</a>
+            <a href="#" class="item">Fassade</a>
+            <a href="#" class="item">Fliesen</a>
+        </div>
+    </div>
+</body>
+</html>
