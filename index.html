@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athen Bau | Präzision & Qualität</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;700&display=swap');
+
+        body { 
+            background-color: #1A1A1A; /* Tieferes Anthrazit */
+            margin: 0; 
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            color: #D4AF37;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* Kontakt oben rechts */
+        .kontakt-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
+        .kontakt-btn {
+            border: 1.5px solid #D4AF37;
+            color: #D4AF37;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Branding Mitte */
+        .branding {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1 { 
+            font-family: 'Playfair Display', serif; /* Schöne, klassische Schrift */
+            font-size: 48px; 
+            font-weight: 700; 
+            margin: 0; 
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .slogan { 
+            font-size: 14px; 
+            font-weight: 300; /* Nicht fett */
+            margin-top: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        /* 6 Buttons Raster */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 100%;
+        }
+        .item {
+            border: 1px solid #D4AF37;
+            color: #D4AF37;
+            text-decoration: none;
+            padding: 40px 10px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .item:hover {
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="kontakt-wrapper">
+            <a href="tel:+49123456789" class="kontakt-btn">KONTAKT</a>
+        </div>
+
+        <div class="branding">
+            <h1>Athen Bau</h1>
+            <div class="slogan">Präzision, Qualität, Zuverlässigkeit</div>
+        </div>
+
+        <div class="grid">
+            <a href="#" class="item">Badezimmer</a>
+            <a href="#" class="item">Küche</a>
+            <a href="#" class="item">Wände</a>
+            <a href="#" class="item">Böden</a>
+            <a href="#" class="item">Fassade</a>
+            <a href="#" class="item">Fliesen</a>
+        </div>
+    </div>
+
+</body>
+</html>
