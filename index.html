@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athen Bau</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+        body { 
+            margin: 0; padding: 0; background-color: #f0f0f0; 
+            font-family: 'Montserrat', sans-serif; display: flex; justify-content: center;
+        }
+
+        .phone-container {
+            width: 100%; max-width: 450px; background-color: #262626; 
+            min-height: 100vh; display: flex; flex-direction: column; position: relative;
+        }
+
+        /* 1. Header & Kontakt */
+        .header { padding: 15px 20px; display: flex; justify-content: flex-end; }
+        .kontakt-btn {
+            background: linear-gradient(to right, #b89356, #dec18a);
+            color: white; border: none; padding: 6px 12px;
+            font-size: 11px; font-weight: bold; text-decoration: none;
+            border-radius: 2px; text-transform: uppercase;
+        }
+
+        /* 2. Logo & Branding */
+        .branding { text-align: center; padding: 10px 0 30px 0; color: #dec18a; }
+        .logo-img { width: 120px; height: auto; margin-bottom: 10px; }
+        h1 { 
+            font-family: 'Cinzel', serif; font-size: 38px; margin: 0; 
+            font-weight: 700; letter-spacing: 2px; 
+        }
+        .slogan { 
+            font-size: 13px; margin-top: 5px; letter-spacing: 1px;
+            border-bottom: 1px solid #dec18a; display: inline-block; padding-bottom: 4px;
+        }
+
+        /* 3. Weißer Bereich (Projekte) */
+        .projects-area {
+            background-color: #ffffff; flex-grow: 1; padding: 30px 15px;
+            text-align: center; border-top-left-radius: 0px;
+        }
+        .section-title { 
+            color: #333; font-family: 'Cinzel', serif; font-size: 18px; 
+            text-decoration: underline; margin-bottom: 5px; 
+        }
+        .arrow { color: #dec18a; font-size: 18px; margin-bottom: 20px; }
+
+        .grid {
+            display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px;
+        }
+        .card {
+            background-color: #2b2b2b; color: #dec18a; padding: 20px 5px;
+            font-size: 10px; font-weight: 600; text-decoration: none;
+            display: flex; align-items: center; justify-content: center; min-height: 50px;
+        }
+
+        /* 4. Goldene Fußzeile */
+        .footer {
+            background: linear-gradient(180deg, #b89356 0%, #8e6d35 100%);
+            display: grid; grid-template-columns: 1fr 1fr 1fr;
+            padding: 15px 5px; color: white; text-align: center;
+        }
+        .footer-item { font-size: 9px; display: flex; flex-direction: column; align-items: center; }
+        .footer-icon { font-size: 24px; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="phone-container">
+        <div class="header">
+            <a href="#" class="kontakt-btn">📞 KONTAKT</a>
+        </div>
+
+        <div class="branding">
+            <img src="Athen_Bau_logo-Transparent.png" alt="Athen Bau Logo" class="logo-img">
+            <h1>ATHEN Bau</h1>
+            <div class="slogan">Präzision, Qualität, Zuverlässigkeit</div>
+        </div>
+
+        <div class="projects-area">
+            <div class="section-title">Projekte schauen</div>
+            <div class="arrow">↓</div>
+            
+            <div class="grid">
+                <a href="#" class="card">Badezimmer</a>
+                <a href="#" class="card">Küche</a>
+                <a href="#" class="card">Wände & Decken</a>
+                <a href="#" class="card">Bodenbeläge</a>
+                <a href="#" class="card">Fassade</a>
+                <a href="#" class="card">Fliesen</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-item">
+                <span class="footer-icon">⚖️</span>
+                <span>Festpreisgarantie</span>
+            </div>
+            <div class="footer-item">
+                <span class="footer-icon">📅</span>
+                <span>Termintreue</span>
+            </div>
+            <div class="footer-item">
+                <span class="footer-icon">🏆</span>
+                <span>Meisterbetrieb</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
